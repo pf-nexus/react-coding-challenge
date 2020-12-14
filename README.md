@@ -60,7 +60,7 @@ The UI should be similar to the mockup below.
 ## Bonus Points
 You can receive bonus points for no errors/warnings with ESLint (ES5/JSX) and for following the AirBnB style guide. 
 * [JavaScript Style Guide](https://github.com/airbnb/javascript)
-* [React Style Guide](https://github.com/airbnb/javascript/tree/master/react
+* [React Style Guide](https://github.com/airbnb/javascript/tree/master/react)
 The suggested implementation is to use a `.eslintrc.json` file. Read more at [eslint.org](http://eslint.org/)
 
 
