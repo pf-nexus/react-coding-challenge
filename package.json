@@ -4,25 +4,34 @@
   "description": "react coding challange",
   "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom"
+    "start": "npm run watch:css && react-scripts start",
+    "build": "npm run watch:css && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "watch:css": "postcss src/styles/tailwind.css -o src/styles/output.css"
   },
   "author": "No author",
   "license": "No license",
   "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
     "@material-ui/core": "^4.9.3",
     "@material-ui/lab": "^4.0.0-alpha.43",
+    "@mui/material": "^5.4.1",
     "chance": "^1.1.4",
     "lodash.random": "^3.2.0",
     "prop-types": "^15.7.2",
-    "react": "^16.12.0",
+    "react": "^17.0.2",
     "react-dom": "^16.12.0",
     "react-scripts": "^3.4.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.1.1",
-    "@testing-library/react": "^9.4.0"
+    "@testing-library/react": "^9.4.0",
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.6",
+    "postcss-cli": "^9.1.0",
+    "tailwindcss": "^3.0.21"
   },
   "browserslist": {
     "production": [
